@@ -1,7 +1,6 @@
 // Google Fonts
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 
-
 // Font
 $oswald: 'Oswald', sans-serif;
 
@@ -14,9 +13,7 @@ body {
   background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
-
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $oswald;
@@ -29,10 +26,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 div.row#powertoggle {
-  padding-top: 10em;
+  padding: 8em;
   text-align: center;
   @media only screen and (max-width: 40em) {
     width: 100%;
-    padding-top: 2em;
+    padding: 2em;
   }
 }

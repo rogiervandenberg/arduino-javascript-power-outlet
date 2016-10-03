@@ -23,9 +23,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
 div.row#powertoggle {
-  padding-top: 10em;
+  padding: 8em;
   text-align: center; }
   @media only screen and (max-width: 40em) {
     div.row#powertoggle {
       width: 100%;
-      padding-top: 2em; } }
+      padding: 2em; } }
