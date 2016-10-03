@@ -2,7 +2,7 @@
 I wanted to toggle my power outlet from a website. Why? Because I can >:) Earlier I made an '[Online Arduino Switch](https://www.youtube.com/watch?v=r7y0IpGhk_w)', but that one was difficult to set up and connect to. The actual webserver was hosted on the Arduino itself and needed an open port to the outside world (router setting) to work.
 
 ## This edition
-This new version is easier to understand, setup and maintain. This website sets the status for the light to on or off with <a href="http://dweet.io">Dweet.io</a>. The Arduino polls Dweet and switches accordingly. And, this project is fully open source. The advantages of this setup are:
+This new version is easier to understand, setup and maintain. This website sets the status for the light to on or off with <a href="http://dweet.io">Dweet.io</a>. The Arduino polls Dweet and switches accordingly. And, this project is open source. The advantages of this setup are:
 
 * The state is stored in Dweet, so even when disconnecting and reconnecting the Arduino, the lights will be set according to the state
 * No router configuration needed, the Arduino can connect to the internet and get his state
@@ -41,3 +41,5 @@ VIDEO
 
 ## Concerns
 All information sent through Dweet.io is public by default. This means anybody can see your light state and update it.
+
+Furthermore, the Arduino is polling, which takes some resources. It would be nicer to use HTTP chunked responses, but the connection will break eventually.
