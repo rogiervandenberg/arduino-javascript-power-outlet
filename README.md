@@ -17,7 +17,7 @@ You need:
 * A relay(board) to switch a high current outlet (230V) with your Arduino. They can be [easily bought online](http://www.dx.com/s/arduino+relay).
 * Some soldering, I built this to actually switch my high current appliance:
 
-PHOTO
+TODO: Add photo
 
 ### A website
 Make a website which holds the button, [as I built](https://rogiervandenberg.github.io/arduino-javascript-power-outlet/). [Source for the site can be found here](https://github.com/rogiervandenberg/arduino-javascript-power-outlet/tree/gh-pages).
@@ -43,6 +43,7 @@ The relay switches the power on/off for the outlet.That way, my 'christmas tree'
 ## Other cool things
 To make the lights really switchable from wherever, alle instances of the website will switch synchronized. Thus, when opening multiple instances of the website and switching the switch, the switch will update everywhere 8-) This is because the website itself also listens to the PubNub Messages!
 
+![example of synchronization](https://github.com/rogiervandenberg/arduino-javascript-power-outlet/blob/master/synchronized.gif)
 
 ## Demonstration
 
